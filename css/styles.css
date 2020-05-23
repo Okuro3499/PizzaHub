@@ -1,0 +1,14 @@
+.landing {
+    background-image: url('../img/landing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(235, 228, 228);
+    text-align: center;
+    padding-top: 3%;
+}
+
+.landing h1 {
+    padding: 2px;
+    margin: 5px;
+}
