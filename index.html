@@ -43,39 +43,91 @@
                 <p>When entertaining, a Hawaiian pizza, a Regina pizza, or a Peri Peri Chicken pizza from Pizza Hub is the obvious and perfect option to please crowds of all ages. </p>
             </div>
         </div>
+    </div>
 
-        <div class="menu">
-            <h2>PIZZA SIZES</h2><br>
-            <img src="img/top.jpg" alt="pizza price" height='800' width='1200'><br><br><br>
-            <div class="row" id="order">
-                <div class="col-md-4" id="image">
-                    <img src="img/medium.png" height='150' width='150' alt="Small Pizza">
-                    <div class="pname">
-                        <div class="text">Small Size</div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="image">
-                    <img src="img/medium.png" height='150' width='150' alt="Medium Pizza">
-                    <div class="pname">
-                        <div class="text">Medium Size</div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="image">
-                    <img src="img/medium.png" height='150' width='150' alt="Large pizza">
-                    <div class="pname">
-                        <div class="text">Large Size</div>
-                    </div>
-                </div>
-            </div><br>
-
-            <div class="container-fluid contact">
-                <div id="contact">
-                    <h2>CONTACT US</h2>
-                    <p><strong>Contact us to make an order:</strong><em> +254719240756</em></p>
-                    <p>Email:<span>gideonollonde@gmail.com</span></p>
+    <div class="menu">
+        <h2>PIZZA SIZES</h2><br>
+        <img src="img/top.jpg" alt="pizza price" height='800' width='1200'><br><br><br>
+        <div class="row" id="order">
+            <div class="col-md-4" id="image">
+                <img src="img/medium.png" height='150' width='150' alt="Small Pizza">
+                <div class="pname">
+                    <div class="text">Small Size</div>
                 </div>
             </div>
+            <div class="col-md-4" id="image">
+                <img src="img/medium.png" height='150' width='150' alt="Medium Pizza">
+                <div class="pname">
+                    <div class="text">Medium Size</div>
+                </div>
+            </div>
+            <div class="col-md-4" id="image">
+                <img src="img/medium.png" height='150' width='150' alt="Large pizza">
+                <div class="pname">
+                    <div class="text">Large Size</div>
+                </div>
+            </div>
+        </div><br>
+    </div>
+
+    <div class="container-fluid order" id="make-order">
+        <h2>Order Here</h2>
+    </div>
+    <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <form action="">
+                <label for="select">Select Your Flavor</label>
+                <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <!-- <option selected value="choose">Choose your flavor</option> -->
+                        <option value="Chicken Tikka">Chicken Tikka</option>
+                        <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                        <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                        <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                        <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                        <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+                      </select>
+                <label for="select">Select Size</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                      <option selected value="0">Select size here</option>
+                      <option value="large">Large -- sh. 1200</option>
+                      <option value="medium">Medium -- sh. 850</option>
+                      <option value="small">Small -- sh. 600</option>
+                    </select>
+                <label for="crust">Choose your favorite Crust!</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                          <option selected value="0">Select your preferred crust!</option>
+                        <option value="Crispy">Crispy -- sh. 200</option>
+                        <option value="Stuffed">Stuffed -- sh. 150</option>
+                        <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                      </select>
+                <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                    <label class="custom-control-label" for="Sausage">Sausage</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                    <label class="custom-control-label" for="Bacon">Bacon</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                    <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                </div>
+                <br><br>
+                <button type="submit" class="btn btn-orange proceed">Proceed</button>
+
+            </form>
         </div>
+    </div>
+
+    <div class="container-fluid contact">
+        <div id="contact">
+            <h2>CONTACT US</h2>
+            <p><strong>Contact us to make an order:</strong><em> +254719240756</em></p>
+            <p>Email:<span>gideonollonde@gmail.com</span></p>
+        </div>
+    </div>
 
 </body>
 
