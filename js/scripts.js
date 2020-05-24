@@ -18,7 +18,7 @@ $(document).ready(function() {
                         $.each($("input[name='toppings']:checked"), function() {
                             ptopping.push($(this).val());
                         });
-                        console.log(ptopping.join(", "));
+                        console.log(ptopping.join(","));
 
                         switch (psize) {
                             case "0":
@@ -78,3 +78,54 @@ $(document).ready(function() {
                         $("#pizzacrust").html($("#crust option:selected").val());
                         $("#pizzatopping").html(ptopping.join(", "));
                         $("#totals").html(total);
+
+                        $("button.addPizza").click(function() {
+                                    let pname = $(".name option:selected").val();
+                                    let psize = $("#size option:selected").val();
+                                    let pcrust = $("#crust option:selected").val();
+                                    let ptopping = [];
+                                    $.each($("input[name='toppings']:checked"), function() {
+                                        ptopping.push($(this).val());
+                                    });
+                                    console.log(ptopping.join(", "));
+                                    switch (psize) {
+                                        case "0":
+                                            price = 0;
+                                            break;
+                                        case "large":
+                                            price = 1050;
+                                            console.log(price);
+                                            break;
+                                        case "medium":
+                                            price = 830;
+                                            console.log("The price is " + price);
+                                            break;
+                                        case "small":
+                                            price = 550;
+                                            console.log(price);
+                                        default:
+                                            console.log("error");
+                                    }
+                                    switch (pcrust) {
+                                        case "0":
+                                            crust_price = 0;
+                                            break;
+                                        case "Crispy":
+                                            crust_price = 200;
+                                            break;
+                                        case "Stuffed":
+                                            crust_price = 150;
+                                            break;
+                                        case "Gluten-free":
+                                            crust_price = 180;
+                                            break;
+                                        default:
+                                            console.log("No price");
+                                    }
+                                    let topping_value = ptopping.length * 50;
+                                    console.log("toppins value" + topping_value);
+                                    total = price + crust_price + topping_value;
+                                    console.log(total);
+
+                                    checkoutTotal = checkoutTotal + total;
+                                    console.log(checkoutTotal);
