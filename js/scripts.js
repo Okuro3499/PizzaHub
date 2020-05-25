@@ -157,3 +157,15 @@ $(document).ready(function() {
                             console.log("You will pay sh. " + deliceryamount + " on delivery");
                             $("#totalbill").append("Your bill plus delivery fee is: " + deliceryamount);
                         });
+
+                        $("button.deliver").click(function() {
+                            $(".pizzatable").hide();
+                            $(".choice h2").hide();
+                            $(".delivery").slideDown(1000);
+                            $("#addedprice").hide();
+                            $("button.deliver").hide();
+                            $("#pizzatotal").hide();
+                            let deliceryamount = checkoutTotal + 150;
+                            console.log("You will pay sh. " + deliceryamount + " on delivery");
+                            $("#totalbill").append("Your bill plus delivery fee is: " + deliceryamount);
+                        });
