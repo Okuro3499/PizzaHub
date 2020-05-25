@@ -11,7 +11,7 @@
 This is a web application for Pizza Hub which is a pizza selling restaurant, that shows details about the services and diffent pizza they sell, their menu and also allows customers to order online for their preferred pizza depending on size, crust and toppings they need and it also allows them to input a location for home/office delivery 
 
 ## Live Page 
- 
+https://okuro3499.github.io/PizzaHub/
 
 
 ## Installation / Setup instruction
@@ -54,5 +54,6 @@ This is a web application for Pizza Hub which is a pizza selling restaurant, tha
 If you have any question or contributions that would better this app, please email me at [gideonollonde@gmail.com]
 
 ## License
-
+* *MIT License:*
+* Copyright (c) 2019 **Gideon Okuro**
 
