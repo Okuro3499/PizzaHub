@@ -82,7 +82,7 @@
     td,
     th {
         font-size: 20px;
-        color: white;
+        color: rgb(10, 10, 10);
     }
     
     .choice h2 {
@@ -91,6 +91,6 @@
     }
     
     #your-orders {
-        color: white;
+        color: rgb(7, 5, 5);
         font-size: 30px;
     }
